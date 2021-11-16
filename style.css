@@ -1,0 +1,162 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.fixedwidth{
+    width: 1000px;
+    margin: auto;
+}
+/* Menu Css*/
+.headermenu{
+    background-color: #000000;
+}
+.headermenu ul{
+    text-align: center;
+}
+.headermenu ul li{
+    display: inline-block;
+}
+.headermenu ul li a{
+    display: inline-block;
+    padding: 50px 20px;
+    text-decoration: none;
+    color: #b9a9a9;
+}
+.headermenu ul li:hover > a {
+    color: white;
+}
+/* Container css */
+.container{
+    background-image: url(https://i.ibb.co/Q9GQ0Pb/bck1img.jpg);
+    background-size: cover;
+    padding: 200px 0;
+}
+.container h1{
+    background-color: white;
+    display: inline-block;
+    position: relative;
+    top: -30px;
+    left: 409px;
+    padding: 10px 15px;
+}
+.container h3{
+    background-color: white;
+    color: #383d3d;
+    font-weight: 500;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    top: -13px;
+    left: 27px;
+    padding: 5px 420px;
+}
+.container .button a{
+    display: inline-block;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: 8px 10px;
+    position: relative;
+    top: 14px;
+    left: 445px;
+}
+.container .button a:hover{
+    background-color: #34495e;
+}
+/*footer css*/
+.footer{
+    background-color: #000000;
+    padding: 20px 0;
+}
+.footer p{
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+.footer .socialicon{
+    text-align: center;
+    margin-top: 25px;
+
+}
+.footer .socialicon li{
+    display: inline-block;
+}
+.footer .socialicon li a{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    line-height: 30px;
+    border-radius: 50%;
+    background-color: #5ea5fa;
+    color: #0c0c0c;
+}
+.footer .socialicon li a:hover{
+    background-color: #2980b9;
+}
+/* First Dropdown Menu Css*/
+.headermenu ul li{
+    position: relative;
+}
+.headermenu ul li ul{
+    width: 200px;
+    background-color: #222222;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    visibility: hidden;
+    opacity: 0;
+    transform: scaleY(0);
+    transform-origin: top center;
+    transition: .5s;
+}
+.headermenu ul li:hover .firstdropdown {
+    visibility: visible;
+    opacity: 1;
+    transform: scaleY(1);
+}
+.headermenu ul li ul li{
+    display: block;
+    border-top: 1px solid rgb(53, 51, 51);
+}
+.headermenu ul li ul li:first-child{
+    border-top: 3px solid #4272d7;
+}
+.headermenu ul li ul li a{
+    display: block;
+    padding: 10px 0;
+}
+.headermenu ul li ul li:hover >a{
+    background-color: #4272d7;
+}
+/*second Dropdown menu css*/
+.headermenu ul li ul li{
+    position: relative;
+}
+.headermenu ul li ul li .seconddropdown{
+    width: 200px;
+    background-color: #222222;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    visibility: hidden;
+    opacity: 0;
+    transform: scaleY(0);
+    transform-origin: top center;
+    transition: .5s;
+}
+.headermenu ul li ul li:hover .seconddropdown{
+    visibility: visible;
+    opacity: 1;
+    transform: scaleY(1);
+}
+.headermenu ul li ul li ul li{
+    display: block;
+}
+.headermenu ul li ul li ul li a{
+    display: block;
+    padding: 10px 0;
+}
+.headermenu ul li ul li ul li a:hover{
+    background-color:#4272d7 ;
+}
